@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+header {
+  background-image: url("./images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+}
+header button {
+  border: none;
+  background-color: transparent;
+  height: 23px;
+  display: none;
+}
+header buttton img {
+  height: 100%;
+}
+@media (max-width: 660px) {
+  header {
+    background-color: url("./images/image-hero-mobile.jpg");
+  }
+  header button {
+    display: block;
+  }
+  header nav {
+    position: fixed;
+    width: 270px;
+    left: -350px;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    transition: left 0.6s ease-in-out;
+  }
+  header nav.active {
+    left: 0px;
+  }
+  header nav a {
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+  }
+}
+header button {
+  border: none;
+  background-color: transparent;
+  height: 23px;
+  display: none;
+}
+header button img {
+  height: 100%;
+}
+main {
+  width: 370px;
+  margin: 0px auto;
+}
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  padding: 16px;
+}
+#intro {
+  position: relative;
+  top: -80px;
+}
+#intro .mastercraft {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -41px;
+}
